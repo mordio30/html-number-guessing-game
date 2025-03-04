@@ -1,19 +1,23 @@
 <!DOCTYPE html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="utf-8">
-    <title>TITLE</title>
+    <title>Guess the Number</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Your link to your CSS file -->
-    <link rel="stylesheet" href="">
-    <!-- Your Javascript file goes here -->
-    <script src="" async defer></script>
-  </head>
-  <body>
-    <!-- your HTML should go here -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" async defer></script>
+</head>
+<body>
     <nav>
-      <h1>Let's Play the Guessing Number Game!</h1>
+        <h1>Let's Play the Guessing Number Game!</h1>
     </nav>
-
-
-  </body>
+    <main>
+        <form id="guessForm">
+            <input type="text" id="inputNumber" placeholder="Guess a number" min="1" max="100" required>
+            <button type="submit" id="submitButton">Submit Answer</button>
+        </form>
+        <p id="result"></p>
+        <ul id="guessList"></ul>
+    </main>
+</body>
 </html>
